@@ -1,0 +1,14 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Uvidik.Api/Uvidik.Api.csproj" />
+    <Project Path="src/Uvidik.Application/Uvidik.Application.csproj" />
+    <Project Path="src/Uvidik.Domain/Uvidik.Domain.csproj" />
+    <Project Path="src/Uvidik.Infrastructure/Uvidik.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Uvidik.Api.IntegrationTests/Uvidik.Api.IntegrationTests.csproj" />
+    <Project Path="tests/Uvidik.Application.Tests/Uvidik.Application.Tests.csproj" />
+    <Project Path="tests/Uvidik.Domain.Tests/Uvidik.Domain.Tests.csproj" />
+    <Project Path="tests/Uvidik.Infrastructure.IntegrationTests/Uvidik.Infrastructure.IntegrationTests.csproj" />
+  </Folder>
+</Solution>

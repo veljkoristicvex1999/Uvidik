@@ -1,0 +1,34 @@
+# Visual Studio / VS Code
+.vs/
+.vscode/
+*.user
+*.suo
+
+# .NET
+bin/
+obj/
+*.user
+*.userosscache
+*.sln.docstates
+
+# EF Core
+**/Migrations/*.Designer.cs.orig
+
+# Node / Angular
+node_modules/
+dist/
+.angular/
+npm-debug.log*
+
+# Environment / secrets
+.env
+.env.*
+*.pfx
+*.p12
+
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

@@ -1,0 +1,21 @@
+services:
+  postgres:
+    image: postgres:17-alpine
+    container_name: uvidik-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: uvidik
+      POSTGRES_PASSWORD: uvidik_dev_only
+      POSTGRES_DB: uvidik
+    ports:
+      - "5432:5432"
+    volumes:
+      - uvidik-postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U uvidik -d uvidik"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  uvidik-postgres-data:

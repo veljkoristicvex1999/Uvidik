@@ -1,0 +1,6 @@
+@Uvidik.Api_HostAddress = http://localhost:5298
+
+GET {{Uvidik.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
